@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeminiGPT</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <h1 class="heading">Welcome to GeminiGPT !</h1>
+            <h2 class="sub-heading">How can I assist you ?</h2>
+        </header>
+        <ul class="suggestion">
+        <li class="item">
+            <p class="text">Can you suggest a daily routine for improving productivity ?</p>
+            <span class="material-symbols-rounded">explore</span>
+        </li>
+        <li class="item">
+            <p class="text">How does climate change affect biodiversity ? What are the solutions ?</p>
+            <span class="material-symbols-rounded">lightbulb</span>
+        </li>
+        <li class="item">
+            <p class="text">Can you assist me in writing a poem or short story ?</p>
+            <span class="material-symbols-rounded">draw</span>
+        </li>
+        <li class="item">
+            <p class="text">What is the purpose of access modifiers in OOPs ?</p>
+            <span class="material-symbols-rounded">code_blocks</span>
+        </li>
+        </ul>
+
+        <div class="chat"></div>
+        <div class="prompt">
+            <div class="wrapper">
+                <form action="#" class="form">
+                    <input type="text" placeholder="Ask anything" class="input" required>
+                    <div class="action" >
+
+                        <div class="upload">
+                            <img src="#" class="preview">
+                            <input type="file" accept="image/*, .pdf, .csv, .txt" id ="file-input" hidden>
+                            <button type="button" class="file-icon material-symbols-rounded">description</button>
+                            <button id="addfilebtn" type="button" class="material-symbols-rounded">attach_file</button>
+                            <button id="cancelfilebtn" type="button" class="material-symbols-rounded">close</button>
+                        </div>
+                            <button  type="button" id="stopbtn" class="material-symbols-rounded">stop_circle</button>
+                            <button id="sendpromptbtn" class="material-symbols-rounded">arrow_upward</button>
+                        </div>
+                </form>
+                <button id="themebtn" class="material-symbols-rounded">light_mode</button>
+                <button id="deletebtn" class="material-symbols-rounded">delete</button>
+            </div>
+            <p class="disclaimer">Verify critical info - I'm still learning !</p>
+        </div>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
